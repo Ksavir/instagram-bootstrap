@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Instagram</title>
+</head>
+<body style="background-color:#E4E4E4;">
+    <!-- Barra de Navegación-->
+    <nav class="navbar navbar-expand-lg" style="background-color:#E9EFEE;">
+        <div class="container">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#F34FF3" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+            <a class="navbar-brand" href="#">Instagram</a>
+          </div>
+          <!-- Modal -->
+          <div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">       
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="new-post">Create a new post</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New Post</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>                        
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Comment:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                          <button class="btn btn-light bg-transparent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                              <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                              <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-light bg-transparent">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg>
+                      </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Public</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Desplegable-->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                      <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Activities</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>  
+        </div>
+      </nav>
+      <!-- Navegación entre paginas-->
+      <div class="row">
+        <ul class="nav nav-pills p-3 mb-2 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                  <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+              </svg>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-image" viewBox="0 0 16 16">
+                  <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+              </svg>
+            </button>
+          </li> 
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="container">  
+              <div class="row p-3 gap-2">
+                <div class="col">
+                  <img src="https://www.semana.com/resizer/vDsZ7ggBKfTvRUZFheaUDcqnrYY=/1200x800/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/55XWHO7JEVAPXC4A7Q2FKZ2SYY.jpeg" alt="imagen" width="100%">
+                </div>
+                <div class="col p-1">
+                  <img src="data:image/jpeg;base64,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" alt="imagen" height="100%" width="100%">
+                </div>
+                <div class="col">
+                <img src="https://cnnespanol.cnn.com/wp-content/uploads/2018/10/181018064715-01-food-meme-screengrab-restricted-exlarge-169.jpg?quality=100&strip=info&w=460&h=260&crop=1" alt="imagen3" height="100%" width="100%">
+                </div>
+              </div>
+              <div class="row p-3 gap-2">
+                <div class="col">
+                  <img src="https://diarioenfermero.es/wp-content/uploads/2021/10/meme-1jpg-scaled.jpeg" alt="imagen4" width="100%" height="100%">
+                </div>
+                <div class="col">
+                  <img src="https://aqxobqnyeo.cloudimg.io/v7/_dpio_/2021-07/meme04.jpeg?width=400&org_if_sml=1" alt="imagen5" width="100%" height="100%">
+                </div>
+                <div class="col">
+                  <img src="https://www.softzone.es/app/uploads-softzone.es/2021/11/meme-line.jpg?x=480&quality=20" alt="imagen6" width="100%" height="100%" >
+                </div>
+              </div>
+              <div class="row p-3 gap-2">
+                <div class="col">
+                  <img src="https://cdn.memegenerator.es/descargar/435626" alt="imagen7" width="100%" height="100%">
+                </div>
+                <div class="col">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyo7DOGEuiTcoX0Ui1tBtacTYHlUEVf2ErFA&usqp=CAU" alt="imagen8" width="100%" height="100%">
+                </div>
+                <div class="col">
+                  <img src="https://www.syntonize.com/wp-content/uploads/2020/09/Humor-1.jpg" alt="imagen9" width="100%" height="100%">
+                </div>
+              </div>
+            </div>  
+          </div>
+          <!-- Instagram en Linea-->
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"> 
+            <div class="container-fluid p-3 bg-light mb-4" style="width: 40%; height: 40%;">
+              <div id="encabezado" class="d-flex justify-content-between">
+                  <div id="usuario-nombre" class="d-flex flex-row gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                      <h5>Kevin Rivas</h5>   
+                  </div>
+                  <div class="dropdown">
+                      <button class="btn btn-light bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                          </svg>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Share</a></li>
+                        <li><a class="dropdown-item" href="#">Link</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+              </div>    
+              <div class="d-flex justify-content-center" id="foto">
+                  <img class="" style="width: 100%;" src="https://www.semana.com/resizer/vDsZ7ggBKfTvRUZFheaUDcqnrYY=/1200x800/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/55XWHO7JEVAPXC4A7Q2FKZ2SYY.jpeg" alt="imagen1" />
+              </div>   
+              <div id="iconos" class="d-flex justify-content-between">
+                  <div id="grupo-de-iconos" class="d-flex flex-row gap-3 p-3">
+                      <div  id="corazon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                          </svg>
+                      </div>
+                      <div  id="comentario">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                          <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                          </svg>
+                      </div>
+                      <div id="enviar">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                          <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                          </svg>
+                      </div>
+                  </div>        
+                  <div id="icono-guardar" class="p-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="120" height="20" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                      </svg>    
+                  </div>
+              </div>
+              <div class="p-3" style="font-size: 1.2vw;" id="likes">
+                  <p>Liked by <strong>4Geeks Academy, Bootstrap , Web Development</strong> and <strong>2.000.000 others</strong></p>
+              </div>
+              <div class="p-3" id="comment">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in elit risus. Duis ut magna nunc. Vivamus imperdiet ligula nec convallis scelerisque. Curabitur accumsan purus tellus, at vulputate dui tempus sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu volutpat ex. Nullam massa metus, consequat id libero ut, iaculis iaculis augue. Maecenas eu felis ut nibh finibus pulvinar sit amet a ex. Fusce vehicula urna sed orci aliquam mollis. Suspendisse luctus pretium magna sit amet viverra. Nullam a dictum ipsum. Duis lacus neque, luctus in pharetra quis, mattis eget leo. Suspendisse potenti. Sed eu malesuada lectus, vehicula accumsan nulla. Maecenas sodales congue est ut ullamcorper. Suspendisse at magna et massa tincidunt lobortis.</p>
+              </div>
+          </div>
+          <!--2-->
+          <div class="container-fluid p-3 bg-light mb-5" style="width: 40%; height: 40%;">
+            <div id="encabezado" class="d-flex justify-content-between">
+                <div id="usuario-nombre" class="d-flex flex-row gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                    <h5>Kevin Rivas</h5>   
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-light bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Share</a></li>
+                      <li><a class="dropdown-item" href="#">Link</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </div>    
+            <div class="d-flex justify-content-center" id="foto">
+                <img class="" style="width: 100%;" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhUQEBAVFRUVFRcVFRUVFRUWFhcYFRUWFhcYGhUYHSggGBolHhYVITEhJikrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHiUtLTAtLS0rKy0tLS0tLS0tLS0tLS0tLS0tLSsrLS0tLS0rLS0tLS0vLS0tLS0tLS0rLf/AABEIAKcBLQMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUDBAYCB//EAD0QAAIBAgMFBgQDBgYDAQAAAAABAgMRBCExBRJBUWEGInGBkbEyocHRE1JiBxQjQpLwM3KiwuHxU2ODQ//EABoBAQACAwEAAAAAAAAAAAAAAAABBAIDBQb/xAAnEQACAgEEAQQCAwEAAAAAAAAAAQIDEQQSITFBEyJRYQWxMjORQv/aAAwDAQACEQMRAD8A7IkA7RqIsLEkgk8gkgAAADgAAE5AABBIIAIJsAQASUvaxfwF0qR9pIuip7UK+Ha478PcZwYy/izjbi55bS1lFeLSJoShP4KkJdLpfN5Gv1YLjJVVcvgkkiUWnZpp8mDYYNYJBBIIAAAAAAAIDYAua+IxCjlq/wC9TFiMXwj6/Y1Ab4VeWepybd2yCASWCQQCQSCAAfYGADEyBJABBJDAAIJuAAQGSACATYgAAWAAIk0s2ySg2zjZO8Y+b5fdmi+9Vr7M4x3HnbW3XHu0nZ6N2V/+Dj9pbbm81JyeaV+Nk2/Kx52zi4wXelZvJJZ587e5Wx2a7QrOd2le3S7z9bp+RzJWyn2zcopGpPEyffmr9HezvrkiwwmKknfdVnbOL+Vnka9SnCrmsrcNF5dNWJNU872fCz0XnzMck4ydnsvGUqn8Kcb9GtPBr6GPamzHSe8neDdk+KfJlFsvaF8rel7rqmdVgMXvp06qvGXdb9nbmjdTe4P6NFtKkvspESe8TQdOcoS1i7ePJmM6q5WTmtYJABJAIBgxGIUer5fcEpN9GSpUUVdsr6+IcstFy+54qTcnds8klqFaj2AADYAAAAAAAAAfYCSgw3aim8qkJR6q0l9GW+Fx1Kp/hzjLonn6akBST6M4ABIIRJKAIJAAAAABDJIYAIJIbDeAYMdNqDtq1k+XU5Par3YXll08c/I6jEO69zl+0Dtd6vXw8jzeo1DnY2dGqrEcHDYyk3Pfqvdjwvlle+UdXc908e5P8OEbU1mpO6afO70uK1Kc5OT9Xy5niVO2slbklf3CnwZOo9YipBK+8n8vXmzRhCLel+S+57nHeygvNpfJcDPgqGd7dfE2RZrlBotNkJK7eqt87nQUsQ1kldvRe5Q4Wm1K3h8i92VTyb4vPyzMlIwlFm7Ww6rQ/wDbHT9S/L9ilLhzaSknn/djS2ov4jaVlJKXrr87nR0tufaznaivHuRqhs8zmkrsr6+JcstF7+JdK8IORmxGL4R9fsaZBKJLcYqK4AABIAAAAAAAAAAJQBbkWPQIKBuYXa+Ip/DUbXKXeXzzLbC9qeFWn5wf+1/c50gGxWSR3OG2xh5/DUSfKXdfzN5M+cNGfDY2rT/w6ko9E8vR5A2q/wCT6CLnJ4XtPVWVSKn1Xdf2LbDdoMPPJtwf6ll6q6BsVkWWtybnmnJSV4tNc07r5E2BmLkkHpAEGLFTtFvwXqZbGtjXlFc5xXzv9DTqHiqT+jOtZkjxXe5Dek8lG+focZjqkqvetk33Vz5N9P8Ag7PtBQc4KCjdb15Lg0v5W+CbyfS5QTwD1ed/iayv0X5Y/Y8zZHk6tLWMnM/uMpZLS+b5vkuhqVNn3dlnnm9fI6uth5WUILcjo3le3KPLxMM8FZbsEornx8vuQkbsnM18KkrevV8jd2bs6Tz4a+LLSGzoJ3td83n/ANFjSglobVk0ya6KGdC02uUfd5exY7PusvF+S/7PNr1Z5flXlZs3MPGym/BL0b+pnE1TNSpVT7vRe7NTa2IUWk82lkul214anildyavpb3NTbU71pW4WXokXtB7plTUwWMM1KlRyd2eCQdkrAAAEEgAAAAEEgAAAAAgkAFwADEoAAAAAAEBokAE0qkou8JOL5xbXsWmF7RV4ZStNfq19UVRAMlNro6zC9paUsqkXB8/iXqs/kW2HxdOp8FSMvBpv01PntguYNqvfk+kCnR3pw/S97/S19Th8NtrEQyVTeXKSUvnqdV2b2pKtGcpRScbLJuzvd6PwRX1LxUyzTYpSwjf2jiqccmymq1oP4ZJ+Zo9q9oYmnFuhhZVMrtuyivK935HAbT7UYmjUlCdKk5Rtd05TtZxU07tWtZo4LjKb4OpHbBLcfQsRO/dRgryssiv2Hi3WjvZp8U9U7ZrI2qs2sjXyuGbuH0KSdnc9t8jRrY/d1aSWbbdkRhtouWdOpTn0Uov2MjHBurDXlvLJ6Pqjc/C7r8PoYsFi1LKasyz/AHa6a5o3RSZXm2nyclhI9/q5X+i9ikqyvJvm2/VnR7RofgOU29FZeNrI5lHR/HQwmyvqJZZIAOmVgAAAAQASAAAAQASAAAAAC4ABiUAAAAAAAAAAAAAAACGdb2Gfcq/5o+zOSZ1nYl2hV/zR9mVdX/Uyzpf7EXOPi5J5equjlsd2cpVJbzo0r83BP3OoxeKRQbQxsr2jqcJyw+Dvwi2ja2ZsuFJWSjzdklm9Xka2MoRuz1htr0qbcGpp2W9Ka7rfR6LwNPF7Wo371SMW+Lf0EbV5JdMin2psdTd5XcbSTVlKPeVk2uazsc3R7G1PxFN1Iy1d0pRbbVl8LytrkfQcFiE5uDadrNSXFM3/AN0p67qv4GyNnwapVLycvsHZ2KorcqS/FitJWtJeN9Tr8DJ5JnhUnHNL0PVWTUXKKu0m0ubtkvN2JTwYyW5lJi8Uo1nNLfcp7sc8lbL+/M5LGTi6k3BWi5ycUtEru1uhv4ut+DShR3l+I1KUrNZbzd/N5r1KlHQ/G1ySc5eejXrZQyoR8ds9AA6hQAAAAAAAAAAAAAAAAAALgAGJQAAAAAAAAAAAAAAAIOg7KV7fiQ/yy90/dHPmXCYp0pKa4a8mnqjTfW51uKN2nnssTOnxdRlJiccqck2m23ZJK7bfJcTcltKE470HdP8AvQjBRgn+JLOTVl0XQ8y008M9LGacSMRjJyjnhqlusV9ypxFTDJ/xKW5fK847quv1aF9WrVJfDZLm7+yNKrXekmmua09GbFhsyTe3g84KdNNblrdC1liSkpYKlGf4kVut5O3HxRu1bcGQ++CI4fZa0MVc9Y/ExpxjdNptvu5vu2eUdW2yvwebsU9baLxGNpQglKCqRprrFS70vB5s3Q57OZ+Q1HoJbe2ziNr4qVWtOc4uLb+FppxWkVZ6ZGCFea0k/U+1bZ7N4Su2q0Wr5qSdnHwdsl00PnXa7sXVwf8AEg3Vo3+Ky3oct9L3O5CSxgowucv5rDKGG0JrWz8V9jNDaa4xflmVwNuTcXMMbTf81vHIzqSemZz4WWnyJ3EHQElLDFzWkvXMzQ2lLjFPwuidwwWgNOG0YPW6+ZnjiIPSS9Scgygi5JJAIJIAJBBIBcAAxKAAAAAAAAAAAIAJIDNeVduShBXlJ2XK7yBKWTOs2opXlLJJav7LqbtTCQgu8o1JZX4wi+OXHxZuYHAxoqzalN/FN5X/AEr9PuYdpU01lJJrgmvY5Op1bb2wOLqNd6k9lb4+fkrHtpw7sqcXFv4d1JeKlGzi/BmSO1sO84ynD9E815TWfqipxTee9w1/vkYqewsRWjv0qMpRztNK0HZ2febte/DU5Ut0mdPRai2tYi+P9OjpYxSyjJPwdzHNSvxOP2hsfF0oqU6FSMWrqSTta2t1oVcsXWWSrVF035fczjD5O5DXyxiSPpMrpd528cvc15bZw0XZ1ot8o3l7ZHzaV5O8pOT/AFNv3LjZOxsRVa/CoTkue60v6nkZ4XhGFmuml7Tqsbtzei4Uk4p6yfxNcUuSLf8AZ/sluTxU1lHu0+srZy8Enbx8CNg9i7NTxU//AJw085/Rep3UKait2KSSVklkkuSRbpped0jmYstnvsJrQ3lcx7qlFxnFSi1uyi9JReTRnw7tcicLPeWhb+yyl4PhfaXY0sHiJUG7xsp05fmpyvu36qzT6orD7D282HHEUYvScb7kuV8919HZ+58elFpuLVmm01yayZZhPcjOu1Sk4+UACDM3EgAAEEkAg9wqyWkmvMzwx1RcU/FfY1gTkYLCO0l/NF+Rmhjab428UVIJyMF9GSejuejn0ZI4ma/nfqTuIwdoAAc8AAAAAAAEAEnipUSV2Yq+JUer5fc0JzcndsG2FTfZlr4lyyWS+ZY7AoW3q0lomoePF/TzZT2OmpR3KcY/pt8sylr7tleF2yp+Ut9KnZH/AK/RUQ2jUbe883d36vQocRiKsZtuTedy22hSzuiuqy/MkedKmnUVyl2W+zME8XOFOGalduX5IrOTfgr5cz6Hh1CFWnhYLuU6KcU1wjbV88/Vs5b9mOzJx/HrNrdaUYJ3veWbfSOSOxnCEJOo3ebW70SyyXTK5bq9qyd7QaaMY7l5/RrYrE2d3kknpokszTeAw+ISnUoU3dJ3lGL/ALRkqzi8mk+LXA8zrPd3oq7Syina/hwsb4yL9tal2jLh9jUKedOhTi+ahFfM3lF8TWweKbtGbu7eXgbsbFqDTWUc+dex4MkUbF8vA1VIzU5W8DNMwMkXkY1Us7PRnu5gr6gGt2gqbuGnLXccZeW8k/kz452hp3qutH4KuafDeikpr1z8z7LjKCq0qlF//pTnD+qLS+dj51hsLCWHeHqLup7ql+Savaa8738TD1PTsTfTKdtkablY/PDOLJJq03GThJWlFtNdUeToHUTyskkEkAkkgAEEggAkkAAAEAA7kAGZzQAAAQDFWrKOvoCUm+jJJmlXxd8o+v2MNas5a6cjGTgsQqS7ABJJuMuGjm5P+WLfnovmy9xOIUErvgkuehSbtqa51JJeSf3TMteSq15Xfcp3cn0WVkef19m+1peODg69erb9IxY6v3nfLS3oVWNxcIa8RtXHxlNyirLh5I1dnYL96nuN9xZyly6LqylGJnVSox3T4SR3fZTayhUq0b/4ijUp9Uo7rXpulzisXfVnDbTaUoypvdcPht/LbJeKtkbeG27vK1TKXPg+qZlk7n4vVQdag+C+niMz1HF8EVMcQnxDxKRsizrNZLudZ3i1JJX7z4+RfYespx3lzt6HFYRyqTUIPN5t8IrmzuMPh4whGEdFxfF8WXtOm+fBz9W4pY8ntTMqmYJImnLgWGiimblOd1ZnnERNe74GSNR6NZE4BjhOxyG0YUqderT3lG8nNJ6WqWmvdnXVKT4HE/tAw6/hV9HZwl13e9G/k2aNRH2Z+CprKlbDBzPaanTclUp6pbs/9svp5Iozfoy3m7vKWT8H9tTUrUZQlKElaUXZm7R3b4bX2ixo3iHpt9HgAFwugAgAAkAAAAAAAHcAAzOaCGSADTxGKtlHX2NNviwCS5XFJEEgEmZAJABEZWlBvRST9Ls0dq1qij+HSje73pyulvSf0QByL9PB2tlP0YO7oqMNsmtUklOW4m/G3odRSmqUXRp33YqO6+LbvvN9bv5AGuVEXwRfFTlsfRoYhzbul8zW3KnCNul0AYrTQEKo4ISqfl9Gl9TNT39Zb3Vb+Vs1a3o9QDYtPBG9Zj02dJ2dxaoQcbq8rbzs3fz4+J0VPtVSilvv0UvsAXYQSXBntT7M8e12Ees3/TL7Hp9pMHqqz/on9gDPaiNiMse1WD41f9E/sZF2qwX/AJX/AET+wBO1DYiJdqcHwrf6J/Y5D9o23qNenSp0XvPecpOzWislmuvyANd0E4NGMoI4yhXs1kWW369Kpu1IN71oxllqlG9/FPLwAK2nrUZpo0qtKyMkVAJB0C8AACSASAAQSAAQSCQf/9k=" alt="imagen1" />
+            </div>   
+            <div id="iconos" class="d-flex justify-content-between">
+                <div id="grupo-de-iconos" class="d-flex flex-row gap-3 p-3">
+                    <div  id="corazon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+                    </div>
+                    <div  id="comentario">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                        </svg>
+                    </div>
+                    <div id="enviar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                        </svg>
+                    </div>
+                </div>        
+                <div id="icono-guardar" class="p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="20" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                    </svg>    
+                </div>
+            </div>
+            <div class="p-3" style="font-size: 1.2vw;" id="likes">
+                <p>Liked by <strong>4Geeks Academy, Bootstrap , Web Development</strong> and <strong>2.000.000 others</strong></p>
+            </div>
+            <div class="p-3" id="comment">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in elit risus. Duis ut magna nunc. Vivamus imperdiet ligula nec convallis scelerisque. Curabitur accumsan purus tellus, at vulputate dui tempus sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu volutpat ex. Nullam massa metus, consequat id libero ut, iaculis iaculis augue. Maecenas eu felis ut nibh finibus pulvinar sit amet a ex. Fusce vehicula urna sed orci aliquam mollis. Suspendisse luctus pretium magna sit amet viverra. Nullam a dictum ipsum. Duis lacus neque, luctus in pharetra quis, mattis eget leo. Suspendisse potenti. Sed eu malesuada lectus, vehicula accumsan nulla. Maecenas sodales congue est ut ullamcorper. Suspendisse at magna et massa tincidunt lobortis.</p>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="container-fluid p-3 mb-5 bg-light" style="width: 40%; height: 40%;">
+          <div id="encabezado" class="d-flex justify-content-between">
+              <div id="usuario-nombre" class="d-flex flex-row gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                  <h5>Kevin Rivas</h5>   
+              </div>
+              <div class="dropdown">
+                  <button class="btn btn-light bg-transparent dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                          <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                      </svg>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Share</a></li>
+                    <li><a class="dropdown-item" href="#">Link</a></li>
+                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                  </ul>
+                </div>
+          </div>    
+          <div class="d-flex justify-content-center" id="foto">
+              <img class="" style="width: 100%;" src="https://www.syntonize.com/wp-content/uploads/2020/09/Humor-1.jpg" alt="imagen9" />
+          </div>   
+          <div id="iconos" class="d-flex justify-content-between">
+              <div id="grupo-de-iconos" class="d-flex flex-row gap-3 p-3">
+                  <div  id="corazon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                      </svg>
+                  </div>
+                  <div  id="comentario">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                      <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                      </svg>
+                  </div>
+                  <div id="enviar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                      <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                      </svg>
+                  </div>
+              </div>        
+              <div id="icono-guardar" class="p-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="20" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                  </svg>    
+              </div>
+          </div>
+          <div class="p-3" style="font-size: 1.2vw;" id="likes">
+              <p>Liked by <strong>4Geeks Academy, Bootstrap , Web Development</strong> and <strong>2.000.000 others</strong></p>
+          </div>
+          <div class="p-3" id="comment">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in elit risus. Duis ut magna nunc. Vivamus imperdiet ligula nec convallis scelerisque. Curabitur accumsan purus tellus, at vulputate dui tempus sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu volutpat ex. Nullam massa metus, consequat id libero ut, iaculis iaculis augue. Maecenas eu felis ut nibh finibus pulvinar sit amet a ex. Fusce vehicula urna sed orci aliquam mollis. Suspendisse luctus pretium magna sit amet viverra. Nullam a dictum ipsum. Duis lacus neque, luctus in pharetra quis, mattis eget leo. Suspendisse potenti. Sed eu malesuada lectus, vehicula accumsan nulla. Maecenas sodales congue est ut ullamcorper. Suspendisse at magna et massa tincidunt lobortis.</p>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+</body>
+</html>
